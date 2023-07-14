@@ -1,0 +1,454 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(./images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+header h1 {
+  font-size: 3rem;
+}
+header img {
+  width: 6rem;
+  margin-bottom: 3rem;
+  margin-top: 7rem;
+}
+header p {
+  margin-bottom: 3rem;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 0 28%;
+  margin-top: 1rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.download {
+  display: flex;
+  justify-content: space-around;
+  min-width: 30%;
+}
+.download a:first-child {
+  padding: 1rem 1.7rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: white;
+  background-color: hsl(171, 66%, 44%);
+}
+.download a:first-child:hover {
+  opacity: 0.7;
+}
+.download a:last-child {
+  padding: 1rem 1.7rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: white;
+  background-color: hsl(233, 100%, 69%);
+}
+.download a:last-child:hover {
+  opacity: 0.7;
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+.first img {
+  width: 50%;
+}
+.first h2 {
+  margin-top: 5rem;
+  font-size: 2.5rem;
+}
+.first p {
+  margin-bottom: 5rem;
+  font-size: 1.3rem;
+  padding: 0 25%;
+  line-height: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.second {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.second img {
+  margin-left: -3rem;
+  width: 100%;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding-left: 10%;
+  padding-right: 25%;
+  margin: auto;
+}
+.about p:nth-child(1),
+.about p:nth-child(3),
+.about p:nth-child(5) {
+  font-size: 1.7rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.about p:nth-child(2),
+.about p:nth-child(4),
+.about p:nth-child(6) {
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.third {
+  display: grid;
+  grid-template-columns: repeat(3, 20%);
+  gap: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+.third p:nth-child(2) {
+  font-weight: 900;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+.third p:nth-child(3) {
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.5rem;
+  margin-bottom: 8rem;
+}
+
+.fourth {
+  display: grid;
+  grid-template-columns: repeat(5, 12%);
+  gap: 4rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.fourth img {
+  width: 80%;
+}
+
+.ending {
+  background-color: #eee;
+  margin-top: 7rem;
+  height: 15rem;
+  display: grid;
+  grid-template-columns: 10% 40% 20%;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.ending > img:first-child {
+  width: 4rem;
+}
+.ending .links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.ending .links > a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.3rem;
+}
+.ending .links > a:hover {
+  color: hsl(171, 66%, 44%);
+}
+.ending .logos {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.ending .logos > a {
+  color: rgba(0, 0, 0, 0.7);
+  margin-left: 1.5rem;
+}
+.ending .logos > a > i:hover {
+  color: hsl(171, 66%, 44%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1280px) {
+  header p {
+    padding: 0 23%;
+  }
+  .download {
+    display: flex;
+    justify-content: space-around;
+    min-width: 37%;
+  }
+  .first p {
+    padding: 0 20%;
+  }
+  .third {
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    gap: 2rem;
+  }
+  .ending {
+    grid-template-columns: 10% 45% 20%;
+  }
+}
+@media (max-width: 1024px) {
+  header p {
+    padding: 0 20%;
+  }
+  .download {
+    display: flex;
+    justify-content: space-around;
+    min-width: 47%;
+  }
+  .ending {
+    grid-template-columns: 10% 55% 20%;
+  }
+}
+@media (max-width: 800px) {
+  header p {
+    padding: 0 15%;
+  }
+  .download {
+    display: flex;
+    justify-content: space-around;
+    min-width: 50%;
+  }
+  .first p {
+    padding: 0 10%;
+  }
+  .about {
+    padding-left: 5%;
+    padding-right: 20%;
+  }
+  .third {
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    gap: 2rem;
+  }
+  .ending {
+    grid-template-columns: 10% 57% 20%;
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    min-height: 100vh;
+    background-image: url(./images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 2.5rem;
+    padding: 0 5%;
+  }
+  header img {
+    width: 4rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+  }
+  header p {
+    margin-bottom: 3rem;
+    padding: 0 7rem;
+    text-align: center;
+    margin-top: 1rem;
+    line-height: 1.7rem;
+    padding: 0 10%;
+  }
+  .download {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+  }
+  .download a:first-child {
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    margin-bottom: 1rem;
+  }
+  .download a:first-child:hover {
+    opacity: 0.7;
+  }
+  .download a:last-child {
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+  }
+  .first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  .first a {
+    text-align: center;
+  }
+  .first img {
+    width: 80%;
+  }
+  .first h2 {
+    margin-top: 5rem;
+    font-size: 2rem;
+  }
+  .first p {
+    margin-bottom: 5rem;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0 10%;
+    line-height: 1.7rem;
+  }
+  .second {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+  }
+  .second img {
+    margin-left: 0;
+    margin: auto;
+    margin-bottom: 3rem;
+    width: 80%;
+  }
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .about p:nth-child(1),
+  .about p:nth-child(3),
+  .about p:nth-child(5) {
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+  }
+  .about p:nth-child(2),
+  .about p:nth-child(4),
+  .about p:nth-child(6) {
+    line-height: 1.7rem;
+  }
+  .third {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10%;
+  }
+  .third p:nth-child(2) {
+    font-weight: 900;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+  }
+  .third p:nth-child(3) {
+    line-height: 1.5rem;
+    margin-bottom: 5rem;
+  }
+  .fourth {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  .fourth img {
+    width: 30%;
+    margin: auto;
+  }
+  .ending {
+    margin-top: 7rem;
+    height: 25rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .ending > img:first-child {
+    width: 3rem;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  .ending .links {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: auto;
+    text-align: center;
+  }
+  .ending .links > a {
+    text-decoration: none;
+  }
+  .ending .links > a:first-child {
+    order: 1;
+  }
+  .ending .links > a:nth-child(2) {
+    order: 3;
+  }
+  .ending .links > a:nth-child(3) {
+    order: 5;
+  }
+  .ending .links > a:nth-child(4) {
+    order: 2;
+  }
+  .ending .links > a:last-child {
+    order: 4;
+  }
+  .ending .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ending .logos > a {
+    color: rgba(0, 0, 0, 0.7);
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+  }
+  .ending .logos > a:first-child {
+    margin-left: 0;
+  }
+}
+@media (max-width: 500px) {
+  .first h2 {
+    font-size: 1.5rem;
+  }
+}
